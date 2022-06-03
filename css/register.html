@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h2>Create Account</h2>
+      <p>Get started with your free account</p>
+
+      <div class="twitter">
+        <i class="fab fa-twitter"></i> Login via Twitter
+      </div>
+      <div class="facebook">
+        <i class="fab fa-facebook-f"></i> Login via Facebook
+      </div>
+      <p>OR</p>
+
+      <form action="#" method="get">
+        <i class="fa-regular fa-user">
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Full Name"
+            autofocus
+          />
+        </i>
+
+        <br />
+
+        <label for="email"></label>
+
+        <i class="fa-regular fa-envelope" id="mail">
+          <input type="email" id="email" required placeholder="Email Address" />
+        </i>
+        <br />
+
+        <!-- <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+          </div>
+          <select class="custom-select" style="max-width: 120px">
+            <option selected="">+971</option>
+            <option value="1">+972</option>
+            <option value="2">+198</option>
+            <option value="3">+701</option>
+          </select>
+          <input
+            name=""
+            class="form-control"
+            placeholder="Phone number"
+            type="text"
+          />
+        </div> -->
+
+        <i class="fa-solid fa-phone-flip">
+          <select class="custom-select" style="max-width: 120px">
+            <option selected="">+971</option>
+            <option value="1">+972</option>
+            <option value="2">+198</option>
+            <option value="3">+701</option>
+          </select>
+          <input type="text" placeholder="phone number" style="width: 120px" />
+        </i>
+        <br />
+
+        <i class="fa-regular fa-building"></i>
+        <select name="job" id="cars" style="width: 180px">
+          <option value="software-engineer" readonly="readonly">
+            select job type
+          </option>
+          <option value="software-engineer">software engineer</option>
+          <option value="human-resources">human resources</option>
+          <option value="computer-engineer">computer engineer</option>
+          <option value="management-information-systems">
+            management information systems
+          </option>
+        </select>
+
+        <br />
+
+        <label for="password"></label>
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Create Password"
+          style="width: 180px"
+        />
+      </form>
+    </div>
+  </body>
+</html>
