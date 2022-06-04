@@ -1,0 +1,45 @@
+#container {
+    background-color: rgb(221, 220, 216);
+    text-align:left;
+    width: 450px;
+    margin: auto;
+    padding: 10px;
+}
+
+#input {
+    width: 380px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+#input1 {
+    width: 340px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+button {
+    color: white;
+    background-color: deeppink;
+    border: 2px solid deeppink;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50px;
+}
+
+#button {
+    color: deeppink;
+    background-color: white;
+    border: 2px solid deeppink;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50px;
+}
+
+i {
+    float: right;
+    margin-left: 15px;
+    color: deeppink;
+}
