@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(65, 165, 165);
+}
+
+ul {
+    text-align: center;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline;
+    margin: auto 60px;
+}
+
+ul li a {
+    font-size: x-large;
+    font-weight: 100;
+    /* margin-right: 200px; */
+    background: rgb(108, 92, 182);
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(108, 92, 182);
+    border-radius: 10%;
+}
+
+img {
+    margin: 10px 50px;
+}
+
+img:hover {
+    box-shadow: 5px -10px 20px 1px rgba(0, 0, 0, .8);
+    cursor: pointer;
+    transition: 3s all;
+    transform: rotate(-360deg);
+}
+
+.text_class {
+    text-align: center;
+    column-count: 4;
+    margin: 10px 50px;
+}
