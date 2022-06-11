@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: blueviolet;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    margin-left:.7rem;
+    margin-right:.7rem;
+}
+
+.container {
+    text-align: center;
+    margin-top: 6rem;
+    
+    background-color: white;
+}
+
+button{
+color: blueviolet;}
+
+#image {
+    background-image: url("./manzara.JPG");
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: .8;
+}
