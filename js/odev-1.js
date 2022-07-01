@@ -1,3 +1,5 @@
+//  çalıştırmak için index.html sayfasında 40. satırdaki "<script src="./odev-2.js"></script>" tagini yorum satırından çıkartın
+
 // Kullanıcı tarafından aldığımız 2 tane sayının
 var result1 = Number(prompt("lütfen 1 sayı giriniz"))
 var result2 = Number(prompt("lütfen 1 sayı giriniz"))

@@ -1,3 +1,5 @@
+//  çalıştırmak için index.html sayfasında 43. satırdaki "<script src="./odev-4.js"></script>" tagini yorum satırından çıkartın
+
 // kullanıcı tarafından sayı girelim (prompt)
 // 1 <= x <= sayı
 // eğer sayı 44 ise toplama yapmadan çıksın (break)
