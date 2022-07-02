@@ -1,4 +1,4 @@
-//  çalıştırmak için index.html sayfasında 42. satırdaki "<script src="./odev-2.js"></script>" tagini yorum satırından çıkartın
+//  çalıştırmak için index.html sayfasında 42. satırdaki "<script src="./odev-3.js"></script>" tagini yorum satırından çıkartın
 
 // kullanıcıdan aldığımız verinin ilk harfi ve son harfi görünsün geriye kalan karakter kadar "*" olsun
 // örneğin => alınan = Uygar / çıktı = U***r
