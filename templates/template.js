@@ -4,7 +4,7 @@ let date = () => {
     // $('selector').action()
     // $('#date1').text(new Date())
     // $('#date1').html(new Date())
-    $('#date1').html(`Tarih: ${new Date()} `)
+    $('#date1').html(new Date())
 
     // document.getElementById("date1").style.color = "white"
     // document.getElementsByClassName("date1")[0].style.backgroundColor = "blue"
