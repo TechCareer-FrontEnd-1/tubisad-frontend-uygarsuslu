@@ -25,15 +25,15 @@ body {
     position: relative;
 }
 
-ul{
+ul {
     list-style-type:none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-p{
+p {
     text-align: justify;
     margin-left:.7rem;
     margin-right:.7rem;
@@ -131,12 +131,16 @@ header {
     padding:2rem;
 }
 
+#ability {
+    padding-top: 2rem;
+}
+
 #ability i{
     color:red;
     font-size: 8rem;
 }
 
-#ability,#newspaper,#blog,#contact{
+#ability,#newspaper,#blog{
     margin-bottom:6rem;
 }
 
@@ -147,6 +151,22 @@ header {
 #ability .card:hover{
    cursor:pointer;
    opacity:.7;
+}
+
+#newspaper {
+    padding: 6rem;
+    background: #3d3d3d;
+    color: white;
+}
+
+#newspaper_id{
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-indent: 3rem;
+    /* column-count: 3;
+    column-rule:solid rgba(0,0,0,.6); */
 }
 
 #blog .card{
@@ -165,15 +185,9 @@ header {
     cursor:pointer;
 }
 
-#newspaper_id{
-    display: -webkit-box;
-    -webkit-line-clamp: 12;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-indent: 3rem;
-
-    /* column-count: 3;
-    column-rule:solid rgba(0,0,0,.6); */
+#contact {
+    padding: 2rem;
+    background: #3d3d3d;
 }
 
 #contact_form>.row>div {
@@ -181,9 +195,8 @@ header {
 }
 
 #contact_form{
-    background: rgba(0,0,0,0.8);
+    background: #212529;
     padding:1rem;
-
 }
 
 #aboutme {
@@ -208,6 +221,7 @@ header {
 #aboutme>img:hover{
       opacity: 0.9;
 }
+  
 /* ############################################################################ */
 
 /* FOOTER */
@@ -218,7 +232,7 @@ footer {
     color: white;
 }
 
-#address_id i{
+#address_id i {
     margin-right: .6rem;
     color: blueviolet;
 }
