@@ -205,6 +205,7 @@
                         name="user_email"
                         placeholder="email adresiniz..."
                         class="form-control"
+                        required
                       />
                       <span
                         id="validation_email"
@@ -227,11 +228,12 @@
                     </div>
                     <div class="col">
                       <input
-                        type="text"
+                        type="password"
                         id="user_password"
                         name="user_password"
                         placeholder="şifreniz..."
                         class="form-control"
+                        required
                       />
                       <span
                         id="validation_password"
@@ -244,11 +246,11 @@
               </div>
 
               <!-- button -->
-              <div class="form-outline mt-2 mb-2">
-                <div class="container">
-                  <div class="row">
+              <div class="form-outline mt-2 mb-2 ">
+                <div class="container d-flex" style="justify-content:flex-end;">
+                  <div class="row d-flex">
                     <div class="col-1">
-                      <label class="form-label" for="form2Example1"> </label>
+                      <label class="form-label" for="btnSubmit"> </label>
                     </div>
                     <div class="col">
                       <button type="reset" class="btn btn-danger">
@@ -301,16 +303,24 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-1">
-                      <label class="form-label" for="form2Example1">
+                      <label class="form-label" for="register_name">
                         <i class="fa-solid fa-user pt-2"></i>
                       </label>
                     </div>
                     <div class="col">
                       <input
                         type="text"
-                        id="form2Example1"
+                        id="register_name"
+                        name="register_name"
+                        placeholder="kullanıcı adınız..."
                         class="form-control"
+                        required
                       />
+                      <span
+                        id="validation_registerName"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -320,16 +330,24 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-1">
-                      <label class="form-label" for="form2Example1">
+                      <label class="form-label" for="register_email">
                         <i class="fa-solid fa-envelope pt-2"></i>
                       </label>
                     </div>
                     <div class="col">
                       <input
                         type="email"
-                        id="form2Example1"
+                        id="register_email"
+                        name="register_email"
+                        placeholder="email adresiniz..."
                         class="form-control"
+                        required
                       />
+                      <span
+                        id="validation_registerEmail"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -340,16 +358,24 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-1">
-                      <label class="form-label" for="form2Example2">
+                      <label class="form-label" for="register_password">
                         <i class="fa-solid fa-key pt-2"></i>
                       </label>
                     </div>
                     <div class="col">
                       <input
                         type="password"
-                        id="form2Example2"
+                        id="register_password"
+                        name="register_password"
+                        placeholder="şifreniz..."
                         class="form-control"
+                        required
                       />
+                      <span
+                      id="validation_registerPassword"
+                      class="text-danger"
+                      style="font-size: 0.8rem"
+                    ></span>
                     </div>
                   </div>
                 </div>
@@ -359,7 +385,7 @@
               <div class="container">
                 <div class="mt-2 mb-2">
                   <button type="submit" class="btn btn-success btn-block w-100">
-                    Register
+                    Kayıt Ol
                   </button>
                 </div>
               </div>
