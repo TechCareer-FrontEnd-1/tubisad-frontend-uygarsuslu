@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- title-->
+    <title>My page</title>
+    <!-- favicon -->
+    <link rel="icon" href="./picture/icon.jpg" />
+    <!-- Turkce karakter -->
+    <meta charset="utf-8" />
+    <!-- responsive design -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- seo -->
+    <meta
+      name="keywords"
+      content="html5,css3,js,jquery,bootstrap,react,es5,es6"
+    />
+    <meta
+      name="description"
+      content="one pages,html5,css3,js,jquery,bootstrap,seo"
+    />
+    <meta name="author" content="Uygar Süslü" />
+    <!-- Google Fonts-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <!-- jquery UI -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- animate CSS-->
+    <link rel="stylesheet" href="./animate.min.css" />
+    <!-- wow js-->
+    <script src="./wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- NAVBAR START -->
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-3"
+      id="navbar"
+    >
+      <!-- Container Wrapper Start -->
+      <div class="container" id="navbar-example">
+        <!-- Navbar brand -->
+        <div id="logo_div">
+          <a class="navbar-brand me-2" href="#">
+            <img
+              src="//d9hhrg4mnvzow.cloudfront.net/www.techcareer.net/mainpage/en/57e21290-techcareer-logo-web_104600g000000000000028.png"
+              height="16"
+              alt="MDB Logo"
+              loading="lazy"
+              style="margin-top: -1px"
+            />
+          </a>
+        </div>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar_id"
+          aria-controls="navbar_id"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbar_id">
+          <!-- Left links Start-->
+          <ul class="navbar-nav me-auto ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">
+                <i class="fa-brands fa-battle-net"></i>Proje</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ability">
+                <i class="fa-brands fa-battle-net"></i>Yetenek</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#newspaper">
+                <i class="fa-solid fa-rectangle-ad"></i>Hakkımda
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">
+                <i class="fa-solid fa-blog"></i>Blog
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">
+                <i class="fa-solid fa-people-group"></i>Deneyim</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="fa-solid fa-address-card"></i>İletişim</a
+              >
+            </li>
+          </ul>
+          <!-- Left links End -->
+
+          <!-- Right Panel Start -->
+          <section id="right">
+            <div class="d-flex align-items-center" id="right_navbar">
+              <li class="menu-item d-flex align-items-center">
+                <div class="ui-widget">
+                  <input id="tags" style="width: 9rem" />
+                </div>
+              </li>
+
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#modelId"
+                type="button"
+                class="btn btn-link px-3 ms-2 me-2"
+              >
+                <i class="fa-solid fa-user-large" style="color: #ffca04"></i>
+              </button>
+
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#registerId"
+                type="button"
+                class="btn btn-primary btn-sm ms-2 me-2"
+              >
+                Kayıt Ol
+              </button>
+            </div>
+          </section>
+          <!-- Right Panel End -->
+        </div>
+        <!-- Collapsible Wrapper End -->
+      </div>
+      <!-- Container Wrapper End -->
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Modal Login Start -->
+    <div
+      class="modal fade"
+      id="modelId"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- modal header -->
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <form>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1">
+                      <label class="form-label" for="user_email">
+                        <i class="fa-solid fa-envelope pt-2"></i>
+                      </label>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        id="user_email"
+                        name="user_email"
+                        placeholder="email adresiniz..."
+                        class="form-control"
+                        required
+                      />
+                      <span
+                        id="validation_email"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1">
+                      <label class="form-label" for="user_password">
+                        <i class="fa-solid fa-key pt-2"></i>
+                      </label>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="password"
+                        id="user_password"
+                        name="user_password"
+                        placeholder="şifreniz..."
+                        class="form-control"
+                        required
+                      />
+                      <span
+                        id="validation_password"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- button -->
+              <div class="form-outline mt-2 mb-2">
+                <div class="container d-flex" style="justify-content: flex-end">
+                  <div class="row d-flex">
+                    <div class="col-1">
+                      <label class="form-label" for="btnSubmit"> </label>
+                    </div>
+                    <div class="col">
+                      <button type="reset" class="btn btn-danger">
+                        Temizle
+                      </button>
+                      <button
+                        id="btnSubmit"
+                        type="submit"
+                        class="btn btn-primary"
+                      >
+                        Giriş Yap
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Login End -->
+
+    <!-- Modal Register Start -->
+    <div
+      class="modal fade"
+      id="registerId"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- modal header -->
+          <div class="modal-header">
+            <h5 class="modal-title">Register</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <form>
+              <!-- User name input -->
+              <div class="form-outline mb-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1">
+                      <label class="form-label" for="register_name">
+                        <i class="fa-solid fa-user pt-2"></i>
+                      </label>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        id="register_name"
+                        name="register_name"
+                        placeholder="kullanıcı adınız..."
+                        class="form-control"
+                        required
+                      />
+                      <span
+                        id="validation_registerName"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1">
+                      <label class="form-label" for="register_email">
+                        <i class="fa-solid fa-envelope pt-2"></i>
+                      </label>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="email"
+                        id="register_email"
+                        name="register_email"
+                        placeholder="email adresiniz..."
+                        class="form-control"
+                        required
+                      />
+                      <span
+                        id="validation_registerEmail"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1">
+                      <label class="form-label" for="register_password">
+                        <i class="fa-solid fa-key pt-2"></i>
+                      </label>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="password"
+                        id="register_password"
+                        name="register_password"
+                        placeholder="şifreniz..."
+                        class="form-control"
+                        required
+                      />
+                      <span
+                        id="validation_registerPassword"
+                        class="text-danger"
+                        style="font-size: 0.8rem"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- button -->
+              <div class="container">
+                <div class="mt-2 mb-2">
+                  <button type="submit" class="btn btn-success btn-block w-100">
+                    Kayıt Ol
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Register End -->
+
+    <!-- HEADER START -->
+    <header id="header">
+      <div class="jumbotron text-white">
+        <div class="container" style="opacity: 1">
+          <div class="header-img wow bounceIn animated" data-wow-delay=".50s">
+            <img src="./picture/intro-img.svg" class="img-fluid" />
+          </div>
+          <div class="header-info">
+            <h1
+              class="text-uppercase display-3 wow bounceIn animated"
+              data-wow-delay=".40s"
+            >
+              UYGAR SÜSLÜ
+            </h1>
+            <h3 class="wow bounceIn animated" data-wow-delay=".50s">
+              HTML5 - CSS3 - Bootstrap
+            </h3>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/uygarsuslu/"
+                class="btn btn-dark shadow wow bounceIn animated"
+                data-wow-delay=".60s"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin" style="margin-right: 5px"></i>
+                Linkedin</a
+              >
+              <a
+                href="https://github.com/uygarsuslu"
+                class="btn btn-dark shadow wow bounceIn animated"
+                data-wow-delay=".60s"
+                target="_blank"
+                ><i class="fa-brands fa-github" style="margin-right: 5px"></i>
+                Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+      <!-- section-1 start -->
+      <section id="projects">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <div class="icon_message">
+            <h2 class="display-6 text-center">PROJELERİM</h2>
+            <div class="row">
+              <div
+                class="col-lg-3 col-md-6 text-center wow bounceInDown animated"
+                data-wow-delay=".40"
+              >
+                <img src="./picture/watchlist.png" alt="" />
+                <h4>React Watchlist</h4>
+                <p>
+                  E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Odio, totam?
+                </p>
+                <div class="col-12 text-center pb-2">
+                  <a
+                    href="https://github.com/uygarsuslu/react-movie-watchlist"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >kaynak kodu
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 text-center wow bounceInDown animated"
+                data-wow-delay=".40"
+              >
+                <img src="./picture/todolist.png" alt="" />
+                <h4>React Todolist</h4>
+                <p>
+                  E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Odio, totam?
+                </p>
+                <div class="col-12 text-center pb-2">
+                  <a
+                    href="https://github.com/uygarsuslu/javascript-to-do-list-homework"
+                    class="btn btn-warning"
+                    target="_blank"
+                    >kaynak kodu
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 text-center wow bounceInUp animated"
+                data-wow-delay=".50"
+              >
+                <img src="./picture/magicform.png" alt="" />
+                <h4>React Formik</h4>
+                <p>
+                  Pie dijital card Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Odio, totam?
+                </p>
+                <div class="col-12 text-center pb-2">
+                  <a
+                    href="https://github.com/uygarsuslu/react-form-example"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >kaynak kodu
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 text-center wow bounceInUp animated"
+                data-wow-delay=".60"
+              >
+                <img src="./picture/weatherapp.png" alt="" />
+                <h4>Weather App</h4>
+
+                <p>
+                  E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Odio, totam?
+                </p>
+                <div class="col-12 text-center pb-2">
+                  <a
+                    href="https://github.com/uygarsuslu/weather-app-react"
+                    class="btn btn-warning"
+                    target="_blank"
+                    >kaynak kodu
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-1 end -->
+
+      <!-- section-2 start -->
+      <section id="counter" class="wow fadeIn">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <div class="counter-header">
+            <h3>Neden bizi seçmelisiniz?</h3>
+            <p>çünkü biz harikayız, bazı ilginç sayıları kontrol edin</p>
+          </div>
+
+          <div class="row counters">
+            <div class="col-lg-3 col-md-6 mx-auto text-center">
+              <span data-toggle="counter-up">274</span>
+              <p class="text-center">Çalışma Saati</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mx-auto text-center">
+              <span data-toggle="counter-up">27</span>
+              <p class="text-center">Proje</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mx-auto text-center">
+              <span data-toggle="counter-up">10,364</span>
+              <p class="text-center">Satır Kod</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mx-auto text-center">
+              <span data-toggle="counter-up">22</span>
+              <p class="text-center">Proje Teslim Edildi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-2 end -->
+
+      <!-- section-3 start -->
+      <section id="ability">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <h2 class="display-6 text-center">YETENEKLERİM</h2>
+          <div class="row">
+            <!-- html5 -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto" id="html">
+              <div class="card wow rotateInDownLeft animated">
+                <i class="fa-brands fa-html5 text-center text-danger"></i>
+                <div class="card-body">
+                  <h4 class="card-title text-uppercase text-center">HTML5</h4>
+                  <p class="card-text line_clamp4">
+                    Html5 Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                    dolor sit amet. adipisicing elit. Quae, fugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- css3 -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto" id="css">
+              <div class="card wow rotateInDownLeft animated">
+                <i class="fa-brands fa-css3-alt text-center text-primary"></i>
+                <div class="card-body">
+                  <h4 class="card-title text-uppercase text-center">CSS3</h4>
+                  <p class="card-text line_clamp4">
+                    Css3 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                    consectetur adipisicing elit. Quae, fugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- js -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto">
+              <div class="card wow rotateInDownRight animated">
+                <i class="fa-brands fa-js text-center text-warning"></i>
+                <div class="card-body">
+                  <h4 class="card-title text-uppercase text-center">
+                    JavaScript
+                  </h4>
+                  <p class="card-text line_clamp4">
+                    JavaScript Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+                    amet. consectetur adipisicing elit. Quae, fugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- react -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto">
+              <div class="card wow rotateInDownRight animated">
+                <i class="fa-brands fa-react text-center text-primary"></i>
+                <div class="card-body">
+                  <h4 class="card-title text-uppercase text-center">React</h4>
+                  <p class="card-text line_clamp4">
+                    React Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                    consectetur adipisicing elit. Quae, fugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-3 end -->
+
+      <!-- section-4 start -->
+      <section id="newspaper">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <div class="row wow bounceInUp animated">
+            <h2 class="display-6 text-center text-white">HAKKIMDA</h2>
+            <p id="newspaper_id">
+              Merhaba ben Uygar Süslü. 1999 İstanbul doğumluyum. Liseyi
+              Sultanahmet Suphi Paşa Ticaret Lisesi'nde "Muhasebe ve Finansman"
+              bölümünü okudum. 12. Sınıfta e-ticaret sitesi olan Markafoni'de
+              muhasebe departmanında 8 ay staj deneyimim bulunmakta. Çalıştığım
+              şirkette yazılım departmanının bana daha uygun olduğunu anlayınca
+              üniversite tercihimi bu alanda kullanmak istedim ve 2018 yılında
+              Akdeniz Üniversitesi Yönetim Bilişim Sistemleri bölümünü kazandım.
+              2. Sınıfın ortalarında pandemi nedeniyle uzaktan eğitime geçildiği
+              dönemde yazılımın hangi alanında ilerlemem gerektiği arayışı içine
+              girdim ve front-end alanının benim için en uygun alan olduğunu
+              fark ettim. Udemy, Patika ve Youtube üzerinden eğitim videoları
+              izleyerek kendimi geliştirmeye çalıştım. Üniversite son sınıfta
+              Antalya Teknokent'te yer alan turizm yazılımları üreten ve destek
+              sağlayan SAN TSG'de 3.5 aylık staj deneyimim bulunmakta.
+              JavaScript ve React teknolojilerini kullanarak küçük çapta
+              projeler yapmaktayım.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section-4 end -->
+
+      <!-- section-5 start -->
+      <section id="blog">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <p class="display-6 text-center">BLOG</p>
+          <div class="row">
+            <div class="col-md-6 mx-auto" id="mobile1">
+              <div class="card wow fadeInLeft animated">
+                <a
+                  href="https://www.kampustenevar.com/kategori-kultur-ve-sanat/nefes-alamiyorum-two-distant-strangers"
+                  target="_blank"
+                  ><img
+                    src="./picture/twodistantstranges.png"
+                    class="card-img-top"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Nefes Alamıyorum: Two Distant Strangers
+                  </h5>
+                  <p class="card-text">
+                    Bazen izlenecek güzel bir film bulmak filmi izlemekten daha
+                    uzun sürebilir. Tam bu sırada karşıma çıkan ve beni derinden
+                    etkileyen 2021 Oscar adayı bu kısa filmi gelin yakından
+                    inceleyelim.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mx-auto" id="mobile2">
+              <div class="card wow fadeInRight animated">
+                <a
+                  href="https://www.kampustenevar.com/kategori-bilim-ve-teknoloji/teknoloji-ve-televizyonun-birlesme-noktasi-reed-hastings---teknocase"
+                  target="_blank"
+                >
+                  <img src="./picture/reedhastings.png" class="card-img-top"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Teknoloji ve Televizyonun Birleşme Noktası
+                  </h5>
+                  <p class="card-text">
+                    DVD kiralama şirketi olarak hayata başlayan Netflix, bugün
+                    milyonlarca üyesiyle dizi/film sektörüne damgasını vurmuş
+                    durumda. Peki bu başarının arkasındaki isim Reed Hastings
+                    kimdir?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-5 end -->
+
+      <!-- section-6 start -->
+      <section class="parallax">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <div class="row">
+            <h2 class="display-6 text-center text-white">SERTİFİKALARIM</h2>
+            <div>
+              <ul class="text-white">
+                <li>Patika | Front-End Web Development Patikası</li>
+                <li>
+                  Oyun Ve Uygulama Akademisi | Flutter ile Uygulama Geliştirme
+                </li>
+                <li>Coursera | Proje Yönetiminin Temelleri</li>
+                <li>Akbank | Dijital İletişim 101</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-6 end -->
+
+      <!-- section-7 start -->
+      <section id="aboutme">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <h2 class="display-6 text-center">İŞ DENEYİMLERİM</h2>
+          <div class="row">
+            <div class="col-md-6 wow wobble animated" id="mobile1">
+              <h4>SAN Tourism Software Group</h4>
+              <ul>
+                <li>
+                  JavaScript ve JQuery kullanarak hata düzeltmeleri yapmak
+                </li>
+                <li>
+                  Takım çalışması ve görev yönetimi konusunda deneyim kazanmak
+                </li>
+              </ul>
+              <h4>MARKAFONİ Ticaret A.Ş.</h4>
+              <ul>
+                <li>Fatura Girişi</li>
+                <li>Ba&Bs Mutabakatı</li>
+                <li>Microsoft Office Programları Kullanımı</li>
+              </ul>
+            </div>
+            <div class="col-md-6 wow wobble animated" id="mobile2">
+              <img
+                src="./picture/santsg.png"
+                width="100%"
+                height="175px"
+                alt=""
+              />
+              <img
+                src="./picture/markafoni.jpg"
+                width="100%"
+                height="175px"
+                alt=""
+              />
+
+              <!-- <a
+                href="https://www.youtube.com/watch?v=DoKjJo-7V9g&t=12s&ab_channel=SemihDemirhan"
+              >
+                <img src="./picture/header.jpg" width="100%" height="350px"
+              /></a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-7 end -->
+
+      <!-- section-8 start -->
+      <section id="contact">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+          <h2 class="text-center display-6 text-white">İLETİŞİM</h2>
+          <div class="row">
+            <div class="col-md-6 wow zoomInDown animated mb-2" id="mobile1">
+              <form action="#!" id="contact_form">
+                <div class="row">
+                  <div class="col-md-6 mt-2">
+                    <input
+                      type="text"
+                      placeholder="adınız"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-2">
+                    <input
+                      type="text"
+                      placeholder="soyadınız"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-2">
+                    <input
+                      type="email"
+                      placeholder="deneme@xyz.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-2">
+                    <input
+                      type="number"
+                      placeholder="numaranız"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-12 mt-2">
+                    <fieldset>
+                      <textarea
+                        name="message"
+                        rows="6"
+                        class="form-control"
+                        id="message"
+                        placeholder="Your message..."
+                        required=""
+                      ></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12 mt-2">
+                    <fieldset>
+                      <button type="reset" class="btn btn-danger">Clear</button>
+                      <button type="submit" class="btn btn-primary">
+                        Send Message
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-6 wow zoomInDown animated" id="mobile2">
+              <div id="map">
+                <iframe
+                  src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="420px"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-8 end -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="text-center text-lg-start" id="special_contact">
+      <!-- footer-tab-1 start -->
+      <section
+        id="section_footer_1"
+        class="p-4 border-top d-flex justify-content-center justify-content-lg-between"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>One Pages</span>
+        </div>
+
+        <!-- social -->
+        <div id="social_id">
+          <a
+            href="https://www.linkedin.com/in/uygarsuslu/"
+            target="_blank"
+            class="me-1 btn btn-outline-warning btn-floating text-reset"
+          >
+            <i class="fa-brands fa-linkedin" style="color: #0a66c2"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/uygarsuslu/?hl=tr"
+            target="_blank"
+            class="me-1 btn btn-outline-light btn-floating text-reset"
+          >
+            <i class="fa-brands fa-instagram" style="color: #9f08f3"></i>
+          </a>
+          <a
+            href="https://web.telegram.org/k/"
+            target="_blank"
+            class="me-1 btn btn-outline-success btn-floating text-reset"
+          >
+            <i class="fa-brands fa-telegram" style="color: #28a4e3"></i>
+          </a>
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            class="me-1 btn btn-outline-info btn-floating text-reset"
+          >
+            <i class="fa-brands fa-google"></i>
+          </a>
+          <a
+            href="https://github.com/uygarsuslu"
+            target="_blank"
+            class="me-1 btn btn-outline-danger btn-floating text-reset"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <!-- footer-tab-1 end -->
+
+      <!-- footer-tab-2 start -->
+      <section id="section_footer_2">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-4">
+            <!--
+              medium device:6
+              large device:3
+              xlarge device:3
+            -->
+
+            <!-- left-1 -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-5 shadow">
+              <h6 class="text-uppercase mb-3">
+                <i
+                  style="font-size: 2rem; margin: right 0.3rem"
+                  class="fa-brands fa-affiliatetheme"
+                ></i>
+                Company INC.
+              </h6>
+              <p style="text-align: left !important" class="line_clamp3">
+                E-Ticaret Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Quibusdam optio quo placeat incidunt facere porro! Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Esse, alias
+                ipsam corporis quia vero autem.
+              </p>
+            </div>
+
+            <!-- left-2 -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-5 shadow">
+              <h6 class="text-uppercase mb-3">Front-End</h6>
+              <p><a href="" class="text-reset">HTML5</a></p>
+              <p><a href="" class="text-reset">CSS3</a></p>
+              <p><a href="" class="text-reset">JS</a></p>
+            </div>
+
+            <!-- left-3 -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-5 shadow">
+              <h6 class="text-uppercase mb-3">BACKEND</h6>
+              <p><a href="" class="text-reset">Node JS</a></p>
+              <p><a href="" class="text-reset">C#</a></p>
+              <p><a href="" class="text-reset">Java</a></p>
+            </div>
+
+            <!-- left-4 -->
+            <div
+              class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-5 shadow"
+              id="address_id"
+            >
+              <h6 class="mb-3">İLETİŞİM</h6>
+              <p><i class="fa-solid fa-earth-africa"></i>Türkiye</p>
+              <p>
+                <i class="fa-solid fa-envelope-open-text"></i
+                ><a href="mailto:uygar@gmail.com">uygar@gmail.com</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-mobile-retro ms-1"></i
+                ><a href="tel:+901112223344">+90 111 222 33 44</a>
+              </p>
+            </div>
+
+            <!-- date -->
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <button onclick="date()" class="btn btn-danger me-5" id="date">
+                  Tarih
+                </button>
+                <span id="date1" class="date1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer-tab-2 end -->
+
+      <!-- CopyRight -->
+      <div class="text-center p-5 bg-dark" id="copy_right">
+        &copy; 2022 CopyRight
+        <a href="#" style="font-weight: bolder; font-size: large"
+          >Uygar Süslü</a
+        >
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- BACK TO TOP START -->
+    <a id="back_top" href="#header" class="btn btn-sm">
+      <i class="fa-solid fa-arrow-up-long text-light"></i>
+    </a>
+    <!-- BACK TO TOP END -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <script src="./experiences/counterup/counterup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+    <!-- External JS -->
+    <script src="template.js"></script>
+  </body>
+</html>
